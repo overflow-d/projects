@@ -1,0 +1,108 @@
+body {
+    height: 100vh;
+    margin: 0;
+    background-color: rgba(1, 142, 255, 0.71);
+    overflow: auto;
+    font-size: xx-large;
+}
+
+.container-calculator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 40px;
+
+}
+
+#calculator {
+    background-color: rgb(57, 54, 88);
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0.5em;
+    padding: 5%;
+    border-radius: 15px;
+}
+
+.display {
+    background-color: rgb(54, 158, 82, 0.74);
+    grid-column: 1/6;
+    height: 80px;
+    width: 26rem;
+    overflow-x: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 3px;
+}
+
+#result-display {
+    color: aliceblue;
+    overflow-x: visible;
+}
+
+#ans-display {
+    font-size: medium;
+    color: rgba(255, 255, 255, 0.931);
+}
+
+#calculator button {
+    display: inline-block;
+    height: 70px;
+    width: 70px;
+    background-color: rgb(255 255 255 / 79%);
+    box-shadow: 5px 4px 20px 5px rgba(0, 0, 0, 0.343);
+    color: rgb(0, 0, 0);
+    font-size: large;
+    cursor: pointer;
+    line-height: 23px;
+    outline: none;
+    padding: .75rem;
+    transition: all 235ms ease-in-out;
+    user-select: none;
+    touch-action: manipulation;
+    border-style: solid;
+    border-radius: 60%;
+}
+
+#calculator button:focus {
+    box-shadow: rgba(0, 0, 0, .3);
+}
+
+#calculator button:hover {
+    box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+    transform: translate3d(0, 2px, 0);
+    background-color: rgba(0, 0, 0, .3);
+}
+
+#calculator #btn-equal {
+    background-color:  rgba(81, 89, 192, 0.616);
+}
+
+#calculator #btn-equal:hover {
+    background-color:  rgba(76, 83, 189);
+}
+
+#calculator #btn-del {
+    background-color:  rgba(255, 99, 71, 0.768);
+}
+
+#calculator #btn-del:hover {
+    background-color:  rgba(247, 79, 50);
+}
+
+#calculator #btn-ac {
+    background-color:  rgba(71, 255, 92, 0.768);
+}
+
+#calculator #btn-ac:hover {
+    background-color:  rgba(28, 255, 55, 0.669);
+
+}
+
+
+#calculator #scientificNotation,
+#calculator #btn-del {
+    font-size: small;
+
+}
